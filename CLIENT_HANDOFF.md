@@ -19,7 +19,7 @@ Every purchase — regular Beat and Exclusive Beat — currently completes throu
 
 ## What you need to do
 
-1. **Production database** — provision Postgres (recommended) or a persisted SQLite file, set `DATABASE_URL`, run `npx prisma migrate deploy`. See README → Database Setup.
+1. **Production database** — done: Prisma Postgres is provisioned via Vercel, with `DATABASE_URL` set there. Run `npx prisma migrate deploy` against it to apply the schema. See README → Database Setup.
 2. **Production storage** — provision persistent storage for beat audio/cover files (a persistent volume, or S3/R2/Supabase Storage via the `StorageProvider` interface). See README → Storage.
 3. **Admin credentials** — set your own `ADMIN_EMAIL`, `ADMIN_PASSWORD`, and a freshly generated `ADMIN_SESSION_SECRET`. Do not reuse any values from this demo.
 4. **`NEXT_PUBLIC_APP_URL`** — set to your real production domain (used in SEO metadata and payment redirect/callback URLs).

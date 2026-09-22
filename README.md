@@ -4,7 +4,7 @@ A single-store catalog for selling ready-made beats: browse, preview, buy, and d
 
 ## Stack
 
-Next.js (App Router) + TypeScript + Tailwind CSS, Prisma + SQLite for local dev (Postgres-ready — see [Database Setup](#database-setup)), zod for validation, next-intl for i18n.
+Next.js (App Router) + TypeScript + Tailwind CSS, Prisma + PostgreSQL (see [Database Setup](#database-setup)), zod for validation, next-intl for i18n.
 
 ## Languages & currency
 
@@ -14,8 +14,8 @@ The public site is available in 9 languages (English default at `/`, others pref
 
 ```bash
 npm install
-cp .env.example .env        # fill in the values described below
-npm run db:migrate          # creates the local SQLite database and applies all migrations
+cp .env.example .env        # fill in the values described below (needs a Postgres DATABASE_URL)
+npm run db:migrate          # applies all migrations to your Postgres database
 npm run db:seed             # seeds 5 placeholder beats (no audio files yet)
 npm run dev
 ```
@@ -28,7 +28,7 @@ See `.env.example` for the full list with placeholder values — copy it to `.en
 
 | Variable | Required | Purpose |
 |---|---|---|
-| `DATABASE_URL` | yes | Prisma connection string. SQLite locally (`file:./dev.db`), Postgres in production. |
+| `DATABASE_URL` | yes | Prisma connection string, a `postgresql://` URL. Same provider locally and in production (Prisma Postgres). |
 | `NEXT_PUBLIC_APP_URL` | yes | Public base URL — used in SEO metadata, absolute links, and payment redirect/callback URLs. |
 | `ADMIN_EMAIL`, `ADMIN_PASSWORD` | yes | Admin panel login (`/admin/login`). No default; the app refuses to authenticate without both set. |
 | `ADMIN_SESSION_SECRET` | yes | Random secret (32+ bytes) signing the admin session cookie. Generate with `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`. |
@@ -38,18 +38,13 @@ There is no storage-specific environment variable — see [Storage](#storage).
 
 ## Database Setup
 
-The schema (`prisma/schema.prisma`) and every migration (`prisma/migrations/`) are committed to Git. `prisma/dev.db` (the local SQLite file) is **not** committed — it's generated locally and is in `.gitignore`.
+The schema (`prisma/schema.prisma`) and every migration (`prisma/migrations/`) are committed to Git. The database is PostgreSQL (Prisma Postgres in production, via Vercel) — point `DATABASE_URL` at a `postgresql://` connection string.
 
-**Local dev (SQLite, default):** `npm run db:migrate` creates `prisma/dev.db` and applies all migrations. No further setup needed.
+Older SQLite-era migrations (from before the move to Postgres) are kept for history in `prisma/migrations_sqlite_archive/` — they don't apply to Postgres and are not run by `prisma migrate deploy`.
 
-**Production (Postgres recommended):**
-1. Change `datasource db { provider = "sqlite" }` to `provider = "postgresql"` in `prisma/schema.prisma`. No model changes are required — the schema was written to be provider-agnostic.
-2. Point `DATABASE_URL` at your Postgres connection string.
-3. Run `npx prisma migrate deploy` against that database (this applies every migration in `prisma/migrations/` in order; it's the production-safe counterpart to `prisma migrate dev`).
+**Local dev:** point `DATABASE_URL` at your own local/dev Postgres instance (not the production one), then run `npm run db:migrate` to apply all migrations.
 
-**Production (SQLite, e.g. a single persistent-disk host like Railway):** point `DATABASE_URL` at a file path on persistent storage (e.g. `file:/data/dev.db`) and run `npx prisma migrate deploy` against it on every deploy/boot — see `scripts/railway-start.sh` for a working example.
-
-Either way, `npx prisma migrate deploy` is idempotent and safe to run on every deploy.
+**Production:** `DATABASE_URL` is set in Vercel to the Prisma Postgres connection string. Run `npx prisma migrate deploy` against it to apply every migration in `prisma/migrations/` in order — idempotent and safe to run on every deploy.
 
 ## Admin
 

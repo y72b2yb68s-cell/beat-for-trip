@@ -1,14 +1,13 @@
 // Prisma schema for Beat For Trip.
 //
-// Local development uses SQLite (zero setup). To move to production Postgres,
-// change `provider` below to "postgresql" and point DATABASE_URL at a Postgres
-// connection string — no model changes are required.
+// Production and local development both use PostgreSQL (Prisma Postgres).
+// DATABASE_URL must be a postgresql:// connection string.
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
