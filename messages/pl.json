@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Beat For Trip — Beaty Premium",
+      "description": "Beaty premium dla artystów, twórców i Twojej następnej podróży."
+    },
+    "beats": {
+      "title": "Wszystkie Beaty",
+      "description": "Przeglądaj pełny katalog Beat For Trip. Odsłuchaj i kup beaty premium."
+    },
+    "about": {
+      "title": "O nas",
+      "description": "O Beat For Trip — katalog premium, gotowych beatów z jednego źródła."
+    },
+    "terms": {
+      "title": "Regulamin",
+      "description": "Regulamin korzystania z Beat For Trip."
+    },
+    "privacy": {
+      "title": "Prywatność",
+      "description": "Polityka prywatności Beat For Trip."
+    },
+    "paymentFailed": {
+      "title": "Płatność nieudana"
+    },
+    "exclusiveBeat": {
+      "title": "Bit ekskluzywny — Beat For Trip",
+      "description": "Zamów unikalny, ekskluzywny bit stworzony specjalnie dla Ciebie — już od 30 €."
+    }
+  },
+  "header": {
+    "beats": "Beaty",
+    "about": "O nas",
+    "language": "Język",
+    "menu": "Menu"
+  },
+  "hero": {
+    "titleLine1": "Znajdź swoje brzmienie.",
+    "titleLine2": "Zacznij swoją podróż.",
+    "subtitle": "Gotowe beaty dla artystów i muzyków.",
+    "explore": "Przeglądaj Beaty",
+    "listenNow": "Posłuchaj teraz"
+  },
+  "home": {
+    "featuredTitle": "Polecane beaty",
+    "ctaTitle": "Gotowy na swój <accent>kolejny beat</accent>?",
+    "ctaSubtitle": "Przeglądaj cały katalog i odsłuchaj każdy utwór przed zakupem.",
+    "browseAll": "Zobacz wszystkie beaty"
+  },
+  "catalog": {
+    "title": "Wszystkie Beaty",
+    "beatsAvailable": "{count, plural, one {# dostępny beat} few {# dostępne beaty} many {# dostępnych beatów} other {# dostępnego beatu}}",
+    "searchPlaceholder": "Szukaj beatów...",
+    "filters": "Filtry",
+    "closeFilters": "Zamknij filtry",
+    "sortBy": "Sortuj według",
+    "newest": "Najnowsze",
+    "priceLowHigh": "Cena: rosnąco",
+    "priceHighLow": "Cena: malejąco",
+    "genre": "Gatunek",
+    "allGenres": "Wszystkie gatunki",
+    "key": "Tonacja",
+    "allKeys": "Wszystkie tonacje",
+    "bpm": "BPM",
+    "price": "Cena (€)",
+    "resetFilters": "Wyczyść filtry",
+    "noResultsTitle": "Nie znaleziono beatów",
+    "noResultsHint": "Spróbuj zmienić wyszukiwanie lub filtry.",
+    "showResults": "Pokaż {count} wyników",
+    "minBpm": "Minimalne BPM",
+    "maxBpm": "Maksymalne BPM",
+    "minPrice": "Cena minimalna",
+    "maxPrice": "Cena maksymalna",
+    "previous": "Poprzedni",
+    "next": "Następny",
+    "exclusiveCtaTitle": "Potrzebujesz ekskluzywnego bitu?",
+    "exclusiveCtaSubtitle": "Już od 30 €",
+    "exclusiveCtaButton": "Kup Ekskluzywny Bit"
+  },
+  "beat": {
+    "bpm": "BPM",
+    "key": "Tonacja",
+    "genre": "Gatunek",
+    "duration": "Czas trwania",
+    "description": "Opis",
+    "buy": "Kup Beat",
+    "buyShort": "Kup",
+    "play": "Odtwórz",
+    "pause": "Pauza",
+    "playPreview": "Odtwórz podgląd",
+    "pausePreview": "Zatrzymaj podgląd",
+    "previewSoon": "Podgląd będzie wkrótce dostępny.",
+    "notAvailable": "Ten beat nie jest jeszcze dostępny do zakupu.",
+    "volume": "Głośność",
+    "previewLabel": "Podgląd",
+    "fallbackGenre": "Beat"
+  },
+  "checkout": {
+    "emailLabel": "Email do dostawy",
+    "emailPlaceholder": "ty@przyklad.pl",
+    "emailHint": "Po dokonaniu płatności otrzymasz na ten adres bezpieczny link do pobrania.",
+    "invalidEmail": "Podaj prawidłowy adres email.",
+    "genericError": "Coś poszło nie tak. Spróbuj ponownie.",
+    "networkError": "Błąd sieci. Spróbuj ponownie.",
+    "processing": "Przetwarzanie...",
+    "total": "Razem",
+    "price": "Cena"
+  },
+  "payment": {
+    "mockGatewayTitle": "Symulowana bramka płatności",
+    "mockGatewaySubtitle": "Symulowany zamiennik Tribute do czasu podłączenia rzeczywistych danych dostępowych.",
+    "payNow": "Zapłać teraz",
+    "simulateFailed": "Symuluj nieudaną płatność",
+    "loading": "Ładowanie...",
+    "confirming": "Potwierdzanie płatności...",
+    "successTitle": "Płatność zakończona sukcesem",
+    "failedTitle": "Płatność nieudana",
+    "refundedTitle": "Płatność zwrócona",
+    "downloadBeat": "Pobierz Beat",
+    "emailSent": "Potwierdzenie z linkiem do pobrania zostało również wysłane na Twój email.",
+    "tryAgain": "Spróbuj ponownie",
+    "missingOrder": "Brak numeru zamówienia.",
+    "backToBeats": "Wróć do Beatów",
+    "noChargeMade": "Twoja płatność nie została zrealizowana. Nie pobrano żadnych środków.",
+    "sessionNotFound": "Nie znaleziono sesji płatności.",
+    "confirmError": "Wystąpił błąd podczas potwierdzania tej płatności.",
+    "exclusiveOrderedTitle": "Zamówiono Ekskluzywny Bit",
+    "exclusiveOrderedDescription": "Twoje zamówienie na ekskluzywny bit zostało pomyślnie złożone. Skontaktujemy się z Tobą w sprawie dalszych kroków.",
+    "exclusiveEmailSent": "Potwierdzenie zostało również wysłane na Twój email."
+  },
+  "errors": {
+    "title404": "Strona nie znaleziona",
+    "desc404": "Szukana strona nie istnieje lub została przeniesiona.",
+    "backHome": "Wróć do strony głównej",
+    "titleError": "Coś poszło nie tak",
+    "descError": "Wystąpił nieoczekiwany błąd. Spróbuj ponownie.",
+    "tryAgain": "Spróbuj ponownie"
+  },
+  "footer": {
+    "tagline": "Beaty premium dla artystów, twórców i Twojej następnej podróży.",
+    "shop": "Sklep",
+    "legal": "Informacje prawne",
+    "beats": "Beaty",
+    "about": "O nas",
+    "terms": "Regulamin",
+    "privacy": "Prywatność",
+    "copyright": "© {year} Beat For Trip. Wszelkie prawa zastrzeżone."
+  },
+  "about": {
+    "title": "O <accent>Beat For Trip</accent>",
+    "paragraph1": "Beat For Trip to katalog premium, gotowych podkładów instrumentalnych z jednego źródła dla artystów, raperów i twórców treści. Każdy beat jest produkowany, miksowany i sprzedawany bezpośrednio przez nas — bez marketplace'u, bez zewnętrznych sprzedawców.",
+    "paragraph2": "Przeglądaj katalog, odsłuchaj każdy utwór przed zakupem i uzyskaj natychmiastowy dostęp do pliku w pełnej jakości po dokonaniu płatności. Konto nie jest wymagane."
+  },
+  "terms": {
+    "title": "Regulamin",
+    "paragraph1": "Kupując beat w Beat For Trip, otrzymujesz niewyłączną licencję na wykorzystanie licencjonowanego pliku we własnych nagraniach, zgodnie z warunkami podanymi w momencie zakupu.",
+    "paragraph2": "Wszystkie beaty pozostają własnością intelektualną Beat For Trip. Odsprzedaż, redystrybucja lub ponowne przesyłanie oryginalnych plików bez licencji jest zabronione.",
+    "paragraph3": "Ze względu na cyfrowy charakter produktu, wszystkie sprzedaże są ostateczne po wystawieniu linku do pobrania."
+  },
+  "privacy": {
+    "title": "Prywatność",
+    "paragraph1": "Beat For Trip nie wymaga konta. Przy zakupie beatu zbieramy podany przez Ciebie adres email w celu przetworzenia płatności, dostarczenia linku do pobrania i wysyłki komunikacji związanej z zamówieniem.",
+    "paragraph2": "Nie sprzedajemy ani nie udostępniamy Twojego adresu email stronom trzecim, poza dostawcą płatności niezbędnym do przetworzenia Twojej transakcji."
+  },
+  "exclusiveBeat": {
+    "title": "Ekskluzywny Bit",
+    "description": "Unikalny bit stworzony tylko dla Ciebie — nigdy nie odsprzedawany. Zapłać teraz, a zaczniemy zaraz potem.",
+    "priceLabel": "Cena",
+    "fromPrice": "Już od {price}",
+    "buyButton": "Kup Ekskluzywny Bit — {price}",
+    "nameLabel": "Imię i nazwisko",
+    "namePlaceholder": "Twoje imię i nazwisko",
+    "nameRequired": "Podaj swoje imię i nazwisko.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "ty@przyklad.com",
+    "emailHint": "Skontaktujemy się z Tobą w sprawie dalszych kroków po płatności."
+  }
+}

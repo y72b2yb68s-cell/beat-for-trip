@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Beat For Trip — Beaturi Premium",
+      "description": "Beaturi premium pentru artiști, creatori și următoarea ta călătorie."
+    },
+    "beats": {
+      "title": "Toate Beaturile",
+      "description": "Răsfoiește întregul catalog Beat For Trip. Ascultă și cumpără beaturi premium."
+    },
+    "about": {
+      "title": "Despre noi",
+      "description": "Despre Beat For Trip — un catalog dintr-un singur magazin cu beaturi premium, gata făcute."
+    },
+    "terms": {
+      "title": "Termeni",
+      "description": "Termenii de utilizare pentru Beat For Trip."
+    },
+    "privacy": {
+      "title": "Confidențialitate",
+      "description": "Politica de confidențialitate Beat For Trip."
+    },
+    "paymentFailed": {
+      "title": "Plată eșuată"
+    },
+    "exclusiveBeat": {
+      "title": "Beat exclusiv — Beat For Trip",
+      "description": "Comandă un beat exclusiv creat special pentru tine, începând de la 30 €."
+    }
+  },
+  "header": {
+    "beats": "Beaturi",
+    "about": "Despre noi",
+    "language": "Limbă",
+    "menu": "Meniu"
+  },
+  "hero": {
+    "titleLine1": "Găsește-ți sunetul.",
+    "titleLine2": "Începe-ți călătoria.",
+    "subtitle": "Beaturi gata făcute pentru artiști și muzicieni.",
+    "explore": "Explorează Beaturile",
+    "listenNow": "Ascultă acum"
+  },
+  "home": {
+    "featuredTitle": "Beaturi recomandate",
+    "ctaTitle": "Ești pregătit pentru <accent>următorul tău beat</accent>?",
+    "ctaSubtitle": "Răsfoiește întregul catalog și ascultă fiecare piesă înainte să cumperi.",
+    "browseAll": "Vezi toate beaturile"
+  },
+  "catalog": {
+    "title": "Toate Beaturile",
+    "beatsAvailable": "{count, plural, one {# beat disponibil} few {# beaturi disponibile} other {# de beaturi disponibile}}",
+    "searchPlaceholder": "Caută beaturi...",
+    "filters": "Filtre",
+    "closeFilters": "Închide filtrele",
+    "sortBy": "Sortează după",
+    "newest": "Cele mai noi",
+    "priceLowHigh": "Preț: crescător",
+    "priceHighLow": "Preț: descrescător",
+    "genre": "Gen",
+    "allGenres": "Toate genurile",
+    "key": "Tonalitate",
+    "allKeys": "Toate tonalitățile",
+    "bpm": "BPM",
+    "price": "Preț (€)",
+    "resetFilters": "Resetează filtrele",
+    "noResultsTitle": "Niciun beat găsit",
+    "noResultsHint": "Încearcă să ajustezi căutarea sau filtrele.",
+    "showResults": "Arată {count} rezultate",
+    "minBpm": "BPM minim",
+    "maxBpm": "BPM maxim",
+    "minPrice": "Preț minim",
+    "maxPrice": "Preț maxim",
+    "previous": "Anterior",
+    "next": "Următorul",
+    "exclusiveCtaTitle": "Ai nevoie de un beat exclusiv?",
+    "exclusiveCtaSubtitle": "Începând de la 30 €",
+    "exclusiveCtaButton": "Cumpără Beat Exclusiv"
+  },
+  "beat": {
+    "bpm": "BPM",
+    "key": "Tonalitate",
+    "genre": "Gen",
+    "duration": "Durată",
+    "description": "Descriere",
+    "buy": "Cumpără Beat",
+    "buyShort": "Cumpără",
+    "play": "Redă",
+    "pause": "Pauză",
+    "playPreview": "Redă previzualizarea",
+    "pausePreview": "Pune previzualizarea pe pauză",
+    "previewSoon": "Previzualizarea va fi disponibilă în curând.",
+    "notAvailable": "Acest beat nu este încă disponibil pentru cumpărare.",
+    "volume": "Volum",
+    "previewLabel": "Previzualizare",
+    "fallbackGenre": "Beat"
+  },
+  "checkout": {
+    "emailLabel": "Email pentru livrare",
+    "emailPlaceholder": "tu@exemplu.ro",
+    "emailHint": "Vei primi un link de descărcare securizat la acest email după plată.",
+    "invalidEmail": "Introdu o adresă de email validă.",
+    "genericError": "Ceva nu a mers bine. Te rugăm să încerci din nou.",
+    "networkError": "Eroare de rețea. Te rugăm să încerci din nou.",
+    "processing": "Se procesează...",
+    "total": "Total",
+    "price": "Preț"
+  },
+  "payment": {
+    "mockGatewayTitle": "Gateway de plată simulat",
+    "mockGatewaySubtitle": "Înlocuitor simulat pentru Tribute până la conectarea datelor reale de acces.",
+    "payNow": "Plătește acum",
+    "simulateFailed": "Simulează plată eșuată",
+    "loading": "Se încarcă...",
+    "confirming": "Se confirmă plata...",
+    "successTitle": "Plată reușită",
+    "failedTitle": "Plată eșuată",
+    "refundedTitle": "Plată rambursată",
+    "downloadBeat": "Descarcă Beat",
+    "emailSent": "O confirmare cu linkul de descărcare a fost trimisă și pe email.",
+    "tryAgain": "Încearcă din nou",
+    "missingOrder": "Referință comandă lipsă.",
+    "backToBeats": "Înapoi la Beaturi",
+    "noChargeMade": "Plata ta nu a fost finalizată. Nu s-a efectuat nicio taxare.",
+    "sessionNotFound": "Sesiunea de plată nu a fost găsită.",
+    "confirmError": "A apărut o eroare la confirmarea acestei plăți.",
+    "exclusiveOrderedTitle": "Beat Exclusiv comandat",
+    "exclusiveOrderedDescription": "Comanda ta pentru Beat Exclusiv a fost plasată cu succes. Te vom contacta cu pașii următori.",
+    "exclusiveEmailSent": "Ți-am trimis o confirmare și pe email."
+  },
+  "errors": {
+    "title404": "Pagina nu a fost găsită",
+    "desc404": "Pagina căutată nu există sau a fost mutată.",
+    "backHome": "Înapoi acasă",
+    "titleError": "Ceva nu a mers bine",
+    "descError": "A apărut o eroare neașteptată. Te rugăm să încerci din nou.",
+    "tryAgain": "Încearcă din nou"
+  },
+  "footer": {
+    "tagline": "Beaturi premium pentru artiști, creatori și următoarea ta călătorie.",
+    "shop": "Magazin",
+    "legal": "Informații legale",
+    "beats": "Beaturi",
+    "about": "Despre noi",
+    "terms": "Termeni",
+    "privacy": "Confidențialitate",
+    "copyright": "© {year} Beat For Trip. Toate drepturile rezervate."
+  },
+  "about": {
+    "title": "Despre <accent>Beat For Trip</accent>",
+    "paragraph1": "Beat For Trip este un catalog dintr-un singur magazin cu instrumentale premium, gata făcute, pentru artiști, rapperi și creatori de conținut. Fiecare beat este produs, mixat și vândut direct de noi — fără marketplace, fără vânzători terți.",
+    "paragraph2": "Răsfoiește catalogul, ascultă fiecare piesă înainte să cumperi și obține acces instant la fișierul în calitate completă după finalizarea comenzii. Nu este necesar un cont."
+  },
+  "terms": {
+    "title": "Termeni",
+    "paragraph1": "Prin achiziționarea unui beat de la Beat For Trip primești o licență neexclusivă pentru a utiliza fișierul licențiat în propriile înregistrări, conform termenilor furnizați la momentul achiziției.",
+    "paragraph2": "Toate beaturile rămân proprietatea intelectuală a Beat For Trip. Revânzarea, redistribuirea sau reîncărcarea fișierelor originale fără licență este interzisă.",
+    "paragraph3": "Datorită naturii digitale a produsului, toate vânzările sunt finale odată ce a fost emis un link de descărcare."
+  },
+  "privacy": {
+    "title": "Confidențialitate",
+    "paragraph1": "Beat For Trip nu necesită un cont. Când cumperi un beat, colectăm adresa de email pe care o furnizezi pentru a procesa plata, a livra linkul de descărcare și a trimite comunicări legate de comandă.",
+    "paragraph2": "Nu vindem și nu partajăm emailul tău cu terți, cu excepția furnizorului de plăți necesar pentru procesarea tranzacției tale."
+  },
+  "exclusiveBeat": {
+    "title": "Beat Exclusiv",
+    "description": "Un beat unic creat doar pentru tine — niciodată revândut. Plătește acum și începem imediat după.",
+    "priceLabel": "Preț",
+    "fromPrice": "Începând de la {price}",
+    "buyButton": "Cumpără Beat Exclusiv — {price}",
+    "nameLabel": "Nume complet",
+    "namePlaceholder": "Numele tău",
+    "nameRequired": "Introdu numele tău.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tu@exemplu.com",
+    "emailHint": "Te vom contacta cu pașii următori după plată."
+  }
+}

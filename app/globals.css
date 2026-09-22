@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --surface: #0d0d0d;
+  --surface-hover: #131313;
+  --border: #1f1f1f;
+  --foreground: #ffffff;
+  --muted: #8a8a8a;
+  --green: #00ff66;
+  --green-soft: #33ff85;
+  --green-dim: rgba(0, 255, 102, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-green: var(--green);
+  --color-green-soft: var(--green-soft);
+  --color-green-dim: var(--green-dim);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--green);
+  color: #050505;
+}
+
+.glow-text {
+  text-shadow: 0 0 40px rgba(0, 255, 102, 0.25);
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out both;
+}

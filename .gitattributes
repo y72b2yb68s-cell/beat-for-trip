@@ -1,0 +1,4 @@
+# Shell scripts must keep Unix line endings even when checked out on Windows
+# with core.autocrlf enabled — CRLF breaks `set -e` and other builtins under
+# Alpine/Linux `sh`, which is what Railway (and most container images) run.
+*.sh text eol=lf

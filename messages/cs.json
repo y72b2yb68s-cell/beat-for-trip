@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Beat For Trip — Prémiové Beaty",
+      "description": "Prémiové beaty pro umělce, tvůrce a váš další výlet."
+    },
+    "beats": {
+      "title": "Všechny Beaty",
+      "description": "Projděte si celý katalog Beat For Trip. Poslechněte si a kupte prémiové beaty."
+    },
+    "about": {
+      "title": "O nás",
+      "description": "O Beat For Trip — katalog prémiových, hotových beatů z jednoho obchodu."
+    },
+    "terms": {
+      "title": "Podmínky",
+      "description": "Podmínky používání Beat For Trip."
+    },
+    "privacy": {
+      "title": "Soukromí",
+      "description": "Zásady ochrany osobních údajů Beat For Trip."
+    },
+    "paymentFailed": {
+      "title": "Platba se nezdařila"
+    },
+    "exclusiveBeat": {
+      "title": "Exkluzivní beat — Beat For Trip",
+      "description": "Objednejte si jedinečný exkluzivní beat vytvořený jen pro vás, již od 30 €."
+    }
+  },
+  "header": {
+    "beats": "Beaty",
+    "about": "O nás",
+    "language": "Jazyk",
+    "menu": "Nabídka"
+  },
+  "hero": {
+    "titleLine1": "Najdi svůj zvuk.",
+    "titleLine2": "Vydej se na cestu.",
+    "subtitle": "Hotové beaty pro umělce a hudebníky.",
+    "explore": "Prozkoumat Beaty",
+    "listenNow": "Poslechnout teď"
+  },
+  "home": {
+    "featuredTitle": "Doporučené beaty",
+    "ctaTitle": "Připraven na svůj <accent>další beat</accent>?",
+    "ctaSubtitle": "Projděte si celý katalog a poslechněte si každou skladbu před nákupem.",
+    "browseAll": "Zobrazit všechny beaty"
+  },
+  "catalog": {
+    "title": "Všechny Beaty",
+    "beatsAvailable": "{count, plural, one {# dostupný beat} few {# dostupné beaty} other {# dostupných beatů}}",
+    "searchPlaceholder": "Hledat beaty...",
+    "filters": "Filtry",
+    "closeFilters": "Zavřít filtry",
+    "sortBy": "Řadit podle",
+    "newest": "Nejnovější",
+    "priceLowHigh": "Cena: od nejnižší",
+    "priceHighLow": "Cena: od nejvyšší",
+    "genre": "Žánr",
+    "allGenres": "Všechny žánry",
+    "key": "Tónina",
+    "allKeys": "Všechny tóniny",
+    "bpm": "BPM",
+    "price": "Cena (€)",
+    "resetFilters": "Obnovit filtry",
+    "noResultsTitle": "Nebyly nalezeny žádné beaty",
+    "noResultsHint": "Zkuste upravit vyhledávání nebo filtry.",
+    "showResults": "Zobrazit {count} výsledků",
+    "minBpm": "Minimální BPM",
+    "maxBpm": "Maximální BPM",
+    "minPrice": "Minimální cena",
+    "maxPrice": "Maximální cena",
+    "previous": "Předchozí",
+    "next": "Další",
+    "exclusiveCtaTitle": "Potřebujete exkluzivní beat?",
+    "exclusiveCtaSubtitle": "Již od 30 €",
+    "exclusiveCtaButton": "Koupit exkluzivní beat"
+  },
+  "beat": {
+    "bpm": "BPM",
+    "key": "Tónina",
+    "genre": "Žánr",
+    "duration": "Délka",
+    "description": "Popis",
+    "buy": "Koupit Beat",
+    "buyShort": "Koupit",
+    "play": "Přehrát",
+    "pause": "Pozastavit",
+    "playPreview": "Přehrát ukázku",
+    "pausePreview": "Pozastavit ukázku",
+    "previewSoon": "Ukázka bude brzy k dispozici.",
+    "notAvailable": "Tento beat zatím není dostupný ke koupi.",
+    "volume": "Hlasitost",
+    "previewLabel": "Ukázka",
+    "fallbackGenre": "Beat"
+  },
+  "checkout": {
+    "emailLabel": "Email pro doručení",
+    "emailPlaceholder": "ty@priklad.cz",
+    "emailHint": "Po zaplacení obdržíte na tento email zabezpečený odkaz ke stažení.",
+    "invalidEmail": "Zadejte platnou emailovou adresu.",
+    "genericError": "Něco se pokazilo. Zkuste to prosím znovu.",
+    "networkError": "Chyba sítě. Zkuste to prosím znovu.",
+    "processing": "Zpracovává se...",
+    "total": "Celkem",
+    "price": "Cena"
+  },
+  "payment": {
+    "mockGatewayTitle": "Simulovaná platební brána",
+    "mockGatewaySubtitle": "Simulovaná náhrada za Tribute, dokud nebudou připojeny skutečné přístupové údaje.",
+    "payNow": "Zaplatit nyní",
+    "simulateFailed": "Simulovat neúspěšnou platbu",
+    "loading": "Načítání...",
+    "confirming": "Potvrzování platby...",
+    "successTitle": "Platba byla úspěšná",
+    "failedTitle": "Platba se nezdařila",
+    "refundedTitle": "Platba byla vrácena",
+    "downloadBeat": "Stáhnout Beat",
+    "emailSent": "Potvrzení s odkazem ke stažení bylo také odesláno na váš email.",
+    "tryAgain": "Zkusit znovu",
+    "missingOrder": "Chybí reference objednávky.",
+    "backToBeats": "Zpět na Beaty",
+    "noChargeMade": "Vaše platba neproběhla. Nebyla stržena žádná částka.",
+    "sessionNotFound": "Platební relace nebyla nalezena.",
+    "confirmError": "Při potvrzování této platby došlo k chybě.",
+    "exclusiveOrderedTitle": "Exkluzivní beat objednán",
+    "exclusiveOrderedDescription": "Vaše objednávka exkluzivního beatu byla úspěšně vytvořena. Budeme vás kontaktovat s dalšími kroky.",
+    "exclusiveEmailSent": "Potvrzení jsme také odeslali na váš email."
+  },
+  "errors": {
+    "title404": "Stránka nenalezena",
+    "desc404": "Hledaná stránka neexistuje nebo byla přesunuta.",
+    "backHome": "Zpět na hlavní stránku",
+    "titleError": "Něco se pokazilo",
+    "descError": "Došlo k neočekávané chybě. Zkuste to prosím znovu.",
+    "tryAgain": "Zkusit znovu"
+  },
+  "footer": {
+    "tagline": "Prémiové beaty pro umělce, tvůrce a váš další výlet.",
+    "shop": "Obchod",
+    "legal": "Právní informace",
+    "beats": "Beaty",
+    "about": "O nás",
+    "terms": "Podmínky",
+    "privacy": "Soukromí",
+    "copyright": "© {year} Beat For Trip. Všechna práva vyhrazena."
+  },
+  "about": {
+    "title": "O <accent>Beat For Trip</accent>",
+    "paragraph1": "Beat For Trip je katalog prémiových, hotových instrumentálů z jednoho obchodu pro umělce, rappery a tvůrce obsahu. Každý beat produkujeme, mixujeme a prodáváme přímo my — žádný tržiště, žádní další prodejci.",
+    "paragraph2": "Procházejte katalog, poslechněte si každou skladbu před nákupem a po zaplacení získejte okamžitý přístup k souboru v plné kvalitě. Účet není potřeba."
+  },
+  "terms": {
+    "title": "Podmínky",
+    "paragraph1": "Zakoupením beatu od Beat For Trip získáváte nevýhradní licenci k použití licencovaného souboru ve vlastních nahrávkách, v souladu s podmínkami uvedenými v době nákupu.",
+    "paragraph2": "Všechny beaty zůstávají duševním vlastnictvím Beat For Trip. Další prodej, šíření nebo opětovné nahrávání původních souborů bez licence je zakázáno.",
+    "paragraph3": "Vzhledem k digitální povaze produktu jsou všechny prodeje konečné po vydání odkazu ke stažení."
+  },
+  "privacy": {
+    "title": "Soukromí",
+    "paragraph1": "Beat For Trip nevyžaduje účet. Při nákupu beatu shromažďujeme vámi zadanou emailovou adresu za účelem zpracování platby, doručení odkazu ke stažení a zasílání komunikace související s objednávkou.",
+    "paragraph2": "Váš email neprodáváme ani nesdílíme s třetími stranami, s výjimkou platebního poskytovatele nezbytného pro zpracování vaší transakce."
+  },
+  "exclusiveBeat": {
+    "title": "Exkluzivní beat",
+    "description": "Jedinečný beat vytvořený pouze pro vás — nikdy dále neprodáván. Zaplaťte nyní a hned poté začneme.",
+    "priceLabel": "Cena",
+    "fromPrice": "Již od {price}",
+    "buyButton": "Koupit exkluzivní beat — {price}",
+    "nameLabel": "Celé jméno",
+    "namePlaceholder": "Vaše jméno",
+    "nameRequired": "Zadejte své jméno.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "vy@priklad.com",
+    "emailHint": "Po platbě vás budeme kontaktovat s dalšími kroky."
+  }
+}

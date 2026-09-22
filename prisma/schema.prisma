@@ -1,0 +1,81 @@
+// Prisma schema for Beat For Trip.
+//
+// Local development uses SQLite (zero setup). To move to production Postgres,
+// change `provider` below to "postgresql" and point DATABASE_URL at a Postgres
+// connection string — no model changes are required.
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Beat {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  description String
+  genre       String
+  bpm         Int
+  key         String
+  duration    Int // seconds
+  price       Float
+  currency    String   @default("EUR") // always EUR — enforced in app code, never client-supplied
+
+  coverUrl    String   @default("") // public URL, e.g. /covers/xxx.jpg
+  previewUrl  String   @default("") // public URL, e.g. /previews/xxx.mp3
+  fileKey     String   @default("") // protected storage key, resolved only after a paid order
+
+  status      String   @default("unpublished") // "published" | "unpublished"
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  orders      Order[]
+
+  @@index([status])
+}
+
+model Order {
+  id                      String    @id @default(cuid())
+  type                    String    @default("BEAT") // "BEAT" | "EXCLUSIVE_BEAT"
+  email                   String
+  customerName            String? // collected for EXCLUSIVE_BEAT orders; regular Beat orders leave this empty
+
+  // Optional because EXCLUSIVE_BEAT orders have no Beat row to point to —
+  // the exclusive item doesn't exist as a catalog product yet.
+  beatId                  String?
+  beat                    Beat?     @relation(fields: [beatId], references: [id])
+
+  amount                  Float
+  currency                String
+
+  paymentProvider         String // "mock" | "tribute"
+  paymentId               String? // external payment/session id from the provider
+
+  status                  String    @default("pending") // pending | paid | failed | refunded
+
+  // EXCLUSIVE_BEAT orders only: fulfillment progress after payment, since the
+  // beat itself is produced after the purchase. Unused (null) for regular
+  // Beat orders, which are fully resolved by `status` + the download token.
+  fulfillmentStatus       String? // "PAID" | "IN_PROGRESS" | "COMPLETED" | "CANCELLED"
+
+  downloadToken           String?   @unique
+  downloadTokenExpiresAt  DateTime?
+
+  createdAt               DateTime  @default(now())
+  updatedAt               DateTime  @updatedAt
+
+  @@index([email])
+  @@index([paymentId])
+  @@index([status])
+  @@index([type])
+}
+
+model Admin {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}

@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Beat For Trip — Prémium Beatek",
+      "description": "Prémium beatek előadóknak, alkotóknak és a következő utazásodhoz."
+    },
+    "beats": {
+      "title": "Összes Beat",
+      "description": "Böngéssz a teljes Beat For Trip katalógusban. Hallgasd meg és vásárolj prémium beateket."
+    },
+    "about": {
+      "title": "Rólunk",
+      "description": "A Beat For Trip-ről — egyetlen üzlet katalógusa prémium, kész beatekkel."
+    },
+    "terms": {
+      "title": "Felhasználási feltételek",
+      "description": "A Beat For Trip felhasználási feltételei."
+    },
+    "privacy": {
+      "title": "Adatvédelem",
+      "description": "A Beat For Trip adatvédelmi szabályzata."
+    },
+    "paymentFailed": {
+      "title": "Sikertelen fizetés"
+    },
+    "exclusiveBeat": {
+      "title": "Exkluzív beat — Beat For Trip",
+      "description": "Rendelj egyedi, exkluzív beatet, amelyet csak neked készítünk — már 30 €-tól."
+    }
+  },
+  "header": {
+    "beats": "Beatek",
+    "about": "Rólunk",
+    "language": "Nyelv",
+    "menu": "Menü"
+  },
+  "hero": {
+    "titleLine1": "Találd meg a hangzásod.",
+    "titleLine2": "Kezdd el az utazást.",
+    "subtitle": "Kész beatek előadóknak és zenészeknek.",
+    "explore": "Beatek böngészése",
+    "listenNow": "Meghallgatom"
+  },
+  "home": {
+    "featuredTitle": "Kiemelt beatek",
+    "ctaTitle": "Készen állsz a <accent>következő beatedre</accent>?",
+    "ctaSubtitle": "Böngéssz a teljes katalógusban, és hallgass bele minden számba vásárlás előtt.",
+    "browseAll": "Összes beat megtekintése"
+  },
+  "catalog": {
+    "title": "Összes Beat",
+    "beatsAvailable": "{count, plural, other {# elérhető beat}}",
+    "searchPlaceholder": "Beatek keresése...",
+    "filters": "Szűrők",
+    "closeFilters": "Szűrők bezárása",
+    "sortBy": "Rendezés",
+    "newest": "Legújabb",
+    "priceLowHigh": "Ár: növekvő",
+    "priceHighLow": "Ár: csökkenő",
+    "genre": "Műfaj",
+    "allGenres": "Összes műfaj",
+    "key": "Hangnem",
+    "allKeys": "Összes hangnem",
+    "bpm": "BPM",
+    "price": "Ár (€)",
+    "resetFilters": "Szűrők törlése",
+    "noResultsTitle": "Nem található beat",
+    "noResultsHint": "Próbáld módosítani a keresést vagy a szűrőket.",
+    "showResults": "{count} találat megjelenítése",
+    "minBpm": "Minimum BPM",
+    "maxBpm": "Maximum BPM",
+    "minPrice": "Minimum ár",
+    "maxPrice": "Maximum ár",
+    "previous": "Előző",
+    "next": "Következő",
+    "exclusiveCtaTitle": "Exkluzív beatre van szükséged?",
+    "exclusiveCtaSubtitle": "30 €-tól",
+    "exclusiveCtaButton": "Exkluzív beat vásárlása"
+  },
+  "beat": {
+    "bpm": "BPM",
+    "key": "Hangnem",
+    "genre": "Műfaj",
+    "duration": "Időtartam",
+    "description": "Leírás",
+    "buy": "Beat megvásárlása",
+    "buyShort": "Vásárlás",
+    "play": "Lejátszás",
+    "pause": "Szünet",
+    "playPreview": "Előzetes lejátszása",
+    "pausePreview": "Előzetes szüneteltetése",
+    "previewSoon": "Az előzetes hamarosan elérhető.",
+    "notAvailable": "Ez a beat még nem vásárolható meg.",
+    "volume": "Hangerő",
+    "previewLabel": "Előzetes",
+    "fallbackGenre": "Beat"
+  },
+  "checkout": {
+    "emailLabel": "Email a kézbesítéshez",
+    "emailPlaceholder": "te@pelda.hu",
+    "emailHint": "Fizetés után biztonságos letöltési linket kapsz erre az emailre.",
+    "invalidEmail": "Adj meg egy érvényes email címet.",
+    "genericError": "Hiba történt. Kérjük, próbáld újra.",
+    "networkError": "Hálózati hiba. Kérjük, próbáld újra.",
+    "processing": "Feldolgozás...",
+    "total": "Összesen",
+    "price": "Ár"
+  },
+  "payment": {
+    "mockGatewayTitle": "Szimulált fizetési átjáró",
+    "mockGatewaySubtitle": "A Tribute szimulált helyettesítője, amíg az éles hozzáférési adatok nincsenek csatlakoztatva.",
+    "payNow": "Fizetés most",
+    "simulateFailed": "Sikertelen fizetés szimulálása",
+    "loading": "Betöltés...",
+    "confirming": "Fizetés megerősítése...",
+    "successTitle": "Sikeres fizetés",
+    "failedTitle": "Sikertelen fizetés",
+    "refundedTitle": "Visszatérített fizetés",
+    "downloadBeat": "Beat letöltése",
+    "emailSent": "A letöltési linket tartalmazó visszaigazolást emailben is elküldtük.",
+    "tryAgain": "Próbáld újra",
+    "missingOrder": "Hiányzó rendelési hivatkozás.",
+    "backToBeats": "Vissza a beatekhez",
+    "noChargeMade": "A fizetésed nem sikerült. Nem történt terhelés.",
+    "sessionNotFound": "A fizetési munkamenet nem található.",
+    "confirmError": "Hiba történt a fizetés megerősítése közben.",
+    "exclusiveOrderedTitle": "Exkluzív beat megrendelve",
+    "exclusiveOrderedDescription": "Az exkluzív beat rendelésed sikeresen leadva. Hamarosan felvesszük veled a kapcsolatot a következő lépésekkel.",
+    "exclusiveEmailSent": "Egy visszaigazolást is küldtünk az email címedre."
+  },
+  "errors": {
+    "title404": "Az oldal nem található",
+    "desc404": "A keresett oldal nem létezik, vagy áthelyezték.",
+    "backHome": "Vissza a főoldalra",
+    "titleError": "Hiba történt",
+    "descError": "Váratlan hiba történt. Kérjük, próbáld újra.",
+    "tryAgain": "Próbáld újra"
+  },
+  "footer": {
+    "tagline": "Prémium beatek előadóknak, alkotóknak és a következő utazásodhoz.",
+    "shop": "Bolt",
+    "legal": "Jogi információk",
+    "beats": "Beatek",
+    "about": "Rólunk",
+    "terms": "Felhasználási feltételek",
+    "privacy": "Adatvédelem",
+    "copyright": "© {year} Beat For Trip. Minden jog fenntartva."
+  },
+  "about": {
+    "title": "A <accent>Beat For Trip</accent>-ről",
+    "paragraph1": "A Beat For Trip egyetlen üzlet katalógusa prémium, kész instrumentálokkal előadóknak, rappereknek és tartalomkészítőknek. Minden beatet mi magunk készítünk, keverünk és értékesítünk — nincs piactér, nincsenek harmadik fél eladók.",
+    "paragraph2": "Böngéssz a katalógusban, hallgass bele bármelyik számba vásárlás előtt, és fizetés után azonnal hozzáférhetsz a teljes minőségű fájlhoz. Fiók nem szükséges."
+  },
+  "terms": {
+    "title": "Felhasználási feltételek",
+    "paragraph1": "A Beat For Trip-en vásárolt beattel nem kizárólagos licencet kapsz a licencelt fájl saját felvételeidben történő felhasználására, a vásárláskor megadott feltételek szerint.",
+    "paragraph2": "Minden beat a Beat For Trip szellemi tulajdona marad. Az eredeti fájlok licenc nélküli továbbértékesítése, terjesztése vagy újra feltöltése tilos.",
+    "paragraph3": "A termék digitális jellege miatt minden eladás véglegesnek számít, amint a letöltési linket kiadtuk."
+  },
+  "privacy": {
+    "title": "Adatvédelem",
+    "paragraph1": "A Beat For Trip nem igényel fiókot. Beat vásárlásakor a megadott email címet a fizetés feldolgozásához, a letöltési link kézbesítéséhez és a rendeléssel kapcsolatos kommunikációhoz gyűjtjük.",
+    "paragraph2": "Az email címedet nem adjuk el és nem osztjuk meg harmadik féllel, kivéve a tranzakció feldolgozásához szükséges fizetési szolgáltatót."
+  },
+  "exclusiveBeat": {
+    "title": "Exkluzív beat",
+    "description": "Egyedi beat, amelyet csak neked készítünk — soha nem adjuk el másnak. Fizess most, és rögtön utána elkezdjük.",
+    "priceLabel": "Ár",
+    "fromPrice": "{price}-tól",
+    "buyButton": "Exkluzív beat vásárlása — {price}",
+    "nameLabel": "Teljes név",
+    "namePlaceholder": "A neved",
+    "nameRequired": "Add meg a neved.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "te@example.com",
+    "emailHint": "Fizetés után felvesszük veled a kapcsolatot a következő lépésekkel."
+  }
+}
