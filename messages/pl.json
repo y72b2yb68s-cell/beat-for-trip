@@ -26,6 +26,10 @@
     "exclusiveBeat": {
       "title": "Bit ekskluzywny — Beat For Trip",
       "description": "Zamów unikalny, ekskluzywny bit stworzony specjalnie dla Ciebie — już od 30 €."
+    },
+    "refund": {
+      "title": "Polityka zwrotów",
+      "description": "Polityka zwrotów Beat For Trip."
     }
   },
   "header": {
@@ -93,7 +97,10 @@
     "notAvailable": "Ten beat nie jest jeszcze dostępny do zakupu.",
     "volume": "Głośność",
     "previewLabel": "Podgląd",
-    "fallbackGenre": "Beat"
+    "fallbackGenre": "Beat",
+    "format": "Format",
+    "digitalProduct": "Produkt cyfrowy",
+    "license": "Licencja"
   },
   "checkout": {
     "emailLabel": "Email do dostawy",
@@ -144,7 +151,8 @@
     "about": "O nas",
     "terms": "Regulamin",
     "privacy": "Prywatność",
-    "copyright": "© {year} Beat For Trip. Wszelkie prawa zastrzeżone."
+    "copyright": "© {year} Beat For Trip. Wszelkie prawa zastrzeżone.",
+    "refund": "Zwroty"
   },
   "about": {
     "title": "O <accent>Beat For Trip</accent>",
@@ -155,7 +163,8 @@
     "title": "Regulamin",
     "paragraph1": "Kupując beat w Beat For Trip, otrzymujesz niewyłączną licencję na wykorzystanie licencjonowanego pliku we własnych nagraniach, zgodnie z warunkami podanymi w momencie zakupu.",
     "paragraph2": "Wszystkie beaty pozostają własnością intelektualną Beat For Trip. Odsprzedaż, redystrybucja lub ponowne przesyłanie oryginalnych plików bez licencji jest zabronione.",
-    "paragraph3": "Ze względu na cyfrowy charakter produktu, wszystkie sprzedaże są ostateczne po wystawieniu linku do pobrania."
+    "paragraph3": "Ze względu na cyfrowy charakter produktu, wszystkie sprzedaże są ostateczne po wystawieniu linku do pobrania.",
+    "exclusiveBeatClause": "Zakup Exclusive Beat różni się od standardowego zakupu bitu: po zakupieniu dany Exclusive Beat nie jest sprzedawany żadnemu innemu klientowi."
   },
   "privacy": {
     "title": "Prywatność",
@@ -173,6 +182,12 @@
     "nameRequired": "Podaj swoje imię i nazwisko.",
     "emailLabel": "Email",
     "emailPlaceholder": "ty@przyklad.com",
-    "emailHint": "Skontaktujemy się z Tobą w sprawie dalszych kroków po płatności."
+    "emailHint": "Skontaktujemy się z Tobą w sprawie dalszych kroków po płatności.",
+    "exclusivePurchaseLabel": "Zakup ekskluzywny"
+  },
+  "refund": {
+    "title": "Polityka zwrotów",
+    "paragraph1": "Ze względu na cyfrowy charakter produktu, wszystkie sprzedaże są ostateczne po wystawieniu linku do pobrania.",
+    "paragraph2": "Zwrot może zostać rozpatrzony w przypadku problemu technicznego z plikiem lub linkiem do pobrania — na przykład, jeśli plik jest uszkodzony lub link nie działa. Aby poprosić o zwrot, skontaktuj się z nami pod adresem {email}."
   }
 }

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildAlternates } from "@/lib/seo";
+import { getPageContent } from "@/lib/site-content";
+import { LEGAL_NAME, BUSINESS_ADDRESS, CONTACT_PHONE, FALLBACK_CONTACT_EMAIL } from "@/lib/business-info";
 import type { AppLocale } from "@/i18n/routing";
 
 export async function generateMetadata({
@@ -21,6 +23,8 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("terms");
+  const settings = await getPageContent("settings", locale);
+  const contactEmail = settings.contact?.contactEmail || FALLBACK_CONTACT_EMAIL;
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
@@ -29,8 +33,17 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
       </h1>
       <div className="mt-6 flex flex-col gap-4 text-sm leading-relaxed text-muted sm:text-base">
         <p>{t("paragraph1")}</p>
+        <p>{t("exclusiveBeatClause")}</p>
         <p>{t("paragraph2")}</p>
         <p>{t("paragraph3")}</p>
+      </div>
+
+      <div className="mt-8 border-t border-border pt-6 text-sm text-muted">
+        <p>{LEGAL_NAME}</p>
+        <p>{BUSINESS_ADDRESS}</p>
+        <p>
+          {CONTACT_PHONE} · {contactEmail}
+        </p>
       </div>
     </div>
   );

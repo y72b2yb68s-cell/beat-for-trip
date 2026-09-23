@@ -122,6 +122,7 @@ export const SITE_CONTENT_REGISTRY: SiteContentFieldDef[] = [
   { page: "footer", section: "links", key: "aboutLabel", label: "Link — About", type: "text", localized: true },
   { page: "footer", section: "links", key: "termsLabel", label: "Link — Terms", type: "text", localized: true },
   { page: "footer", section: "links", key: "privacyLabel", label: "Link — Privacy", type: "text", localized: true },
+  { page: "footer", section: "links", key: "refundLabel", label: "Link — Refund Policy", type: "text", localized: true },
   { page: "footer", section: "copyright", key: "template", label: "Copyright line", type: "text", localized: true, helpText: "Use {year} as the placeholder for the current year." },
 
   // --- SEO (per public page; falls back to messages/*.json metadata when empty) ---

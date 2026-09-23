@@ -11,18 +11,18 @@ export async function generateMetadata({
   params: Promise<{ locale: AppLocale }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata.privacy" });
+  const t = await getTranslations({ locale, namespace: "metadata.refund" });
   return {
     title: t("title"),
     description: t("description"),
-    alternates: buildAlternates(locale, "/privacy"),
+    alternates: buildAlternates(locale, "/refund"),
   };
 }
 
-export default async function PrivacyPage({ params }: { params: Promise<{ locale: AppLocale }> }) {
+export default async function RefundPage({ params }: { params: Promise<{ locale: AppLocale }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("privacy");
+  const t = await getTranslations("refund");
   const settings = await getPageContent("settings", locale);
   const contactEmail = settings.contact?.contactEmail || FALLBACK_CONTACT_EMAIL;
 
@@ -33,7 +33,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
       </h1>
       <div className="mt-6 flex flex-col gap-4 text-sm leading-relaxed text-muted sm:text-base">
         <p>{t("paragraph1")}</p>
-        <p>{t("paragraph2")}</p>
+        <p>{t("paragraph2", { email: contactEmail })}</p>
       </div>
 
       <div className="mt-8 border-t border-border pt-6 text-sm text-muted">

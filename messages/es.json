@@ -26,6 +26,10 @@
     "exclusiveBeat": {
       "title": "Beat exclusivo — Beat For Trip",
       "description": "Encarga un beat exclusivo creado solo para ti, desde 30 €."
+    },
+    "refund": {
+      "title": "Política de reembolso",
+      "description": "Política de reembolso de Beat For Trip."
     }
   },
   "header": {
@@ -93,7 +97,10 @@
     "notAvailable": "Este beat aún no está disponible para su compra.",
     "volume": "Volumen",
     "previewLabel": "Vista previa",
-    "fallbackGenre": "Beat"
+    "fallbackGenre": "Beat",
+    "format": "Formato",
+    "digitalProduct": "Producto digital",
+    "license": "Licencia"
   },
   "checkout": {
     "emailLabel": "Email para la entrega",
@@ -144,7 +151,8 @@
     "about": "Acerca de",
     "terms": "Términos",
     "privacy": "Privacidad",
-    "copyright": "© {year} Beat For Trip. Todos los derechos reservados."
+    "copyright": "© {year} Beat For Trip. Todos los derechos reservados.",
+    "refund": "Reembolsos"
   },
   "about": {
     "title": "Acerca de <accent>Beat For Trip</accent>",
@@ -155,7 +163,8 @@
     "title": "Términos",
     "paragraph1": "Al comprar un beat en Beat For Trip recibes una licencia no exclusiva para usar el archivo licenciado en tus propias grabaciones, según los términos indicados en el momento de la compra.",
     "paragraph2": "Todos los beats siguen siendo propiedad intelectual de Beat For Trip. Está prohibido revender, redistribuir o volver a subir los archivos originales sin licencia.",
-    "paragraph3": "Debido a la naturaleza digital del producto, todas las ventas son finales una vez emitido un enlace de descarga."
+    "paragraph3": "Debido a la naturaleza digital del producto, todas las ventas son finales una vez emitido un enlace de descarga.",
+    "exclusiveBeatClause": "Las compras de Exclusive Beat son diferentes de las compras de beats estándar: una vez comprado, ese Exclusive Beat no se vende a ningún otro cliente."
   },
   "privacy": {
     "title": "Privacidad",
@@ -173,6 +182,12 @@
     "nameRequired": "Introduce tu nombre.",
     "emailLabel": "Email",
     "emailPlaceholder": "tu@ejemplo.com",
-    "emailHint": "Te contactaremos con los siguientes pasos después del pago."
+    "emailHint": "Te contactaremos con los siguientes pasos después del pago.",
+    "exclusivePurchaseLabel": "Compra exclusiva"
+  },
+  "refund": {
+    "title": "Política de reembolso",
+    "paragraph1": "Debido a la naturaleza digital del producto, todas las ventas son finales una vez emitido un enlace de descarga.",
+    "paragraph2": "Se puede considerar un reembolso en caso de un problema técnico con el archivo o el enlace de descarga — por ejemplo, si el archivo está dañado o el enlace no funciona. Para solicitar un reembolso, contáctanos en {email}."
   }
 }

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import type { Beat } from "@/lib/types";
+import { Link } from "@/i18n/navigation";
 import Price from "@/components/ui/Price";
 import Button from "@/components/ui/Button";
 
@@ -14,6 +15,7 @@ export default function BuyBox({ beat }: { beat: Beat }) {
   const locale = useLocale();
   const t = useTranslations("checkout");
   const tBeat = useTranslations("beat");
+  const tFooter = useTranslations("footer");
   const [email, setEmail] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -75,6 +77,15 @@ export default function BuyBox({ beat }: { beat: Beat }) {
           {loading ? t("processing") : tBeat("buy")}
         </Button>
         <p className="text-center text-xs text-muted">{t("emailHint")}</p>
+        <p className="text-center text-xs text-muted">
+          <Link href="/terms" className="hover:text-green hover:underline">
+            {tFooter("terms")}
+          </Link>
+          {" · "}
+          <Link href="/refund" className="hover:text-green hover:underline">
+            {tFooter("refund")}
+          </Link>
+        </p>
       </form>
     </div>
   );

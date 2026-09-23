@@ -4,6 +4,7 @@ import { buildAlternates, getSeoOverride } from "@/lib/seo";
 import { getPageContent } from "@/lib/site-content";
 import { getExclusiveBeatTier } from "@/lib/exclusive-beat";
 import { formatPrice } from "@/lib/utils";
+import { Link } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
 import ExclusiveBeatBuyForm from "@/components/beats/ExclusiveBeatBuyForm";
 
@@ -32,6 +33,9 @@ export default async function ExclusiveBeatPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("exclusiveBeat");
+  const tBeat = await getTranslations("beat");
+  const tFooter = await getTranslations("footer");
+  const tTerms = await getTranslations("terms");
   const content = await getPageContent("exclusiveBeat", locale);
 
   // Price is always resolved server-side from the tier config — CMS content
@@ -75,6 +79,20 @@ export default async function ExclusiveBeatPage({
           )}
 
           <p className="text-lg font-semibold text-green">{fromPrice}</p>
+
+          <div className="flex flex-col gap-1 rounded-xl border border-border bg-surface/50 px-4 py-3 text-xs text-muted">
+            <p className="font-semibold uppercase tracking-wide text-foreground">
+              {tBeat("digitalProduct")} · {t("exclusivePurchaseLabel")}
+            </p>
+            <p>{tBeat("format")}: WAV</p>
+            <p>{tTerms("exclusiveBeatClause")}</p>
+            <p>
+              {tBeat("license")}:{" "}
+              <Link href="/terms" className="text-green hover:underline">
+                {tFooter("terms")}
+              </Link>
+            </p>
+          </div>
         </div>
 
         <div className="sm:sticky sm:top-24 sm:self-start">

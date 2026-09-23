@@ -26,6 +26,10 @@
     "exclusiveBeat": {
       "title": "Exkluzív beat — Beat For Trip",
       "description": "Rendelj egyedi, exkluzív beatet, amelyet csak neked készítünk — már 30 €-tól."
+    },
+    "refund": {
+      "title": "Visszatérítési szabályzat",
+      "description": "A Beat For Trip visszatérítési szabályzata."
     }
   },
   "header": {
@@ -93,7 +97,10 @@
     "notAvailable": "Ez a beat még nem vásárolható meg.",
     "volume": "Hangerő",
     "previewLabel": "Előzetes",
-    "fallbackGenre": "Beat"
+    "fallbackGenre": "Beat",
+    "format": "Formátum",
+    "digitalProduct": "Digitális termék",
+    "license": "Licenc"
   },
   "checkout": {
     "emailLabel": "Email a kézbesítéshez",
@@ -144,7 +151,8 @@
     "about": "Rólunk",
     "terms": "Felhasználási feltételek",
     "privacy": "Adatvédelem",
-    "copyright": "© {year} Beat For Trip. Minden jog fenntartva."
+    "copyright": "© {year} Beat For Trip. Minden jog fenntartva.",
+    "refund": "Visszatérítés"
   },
   "about": {
     "title": "A <accent>Beat For Trip</accent>-ről",
@@ -155,7 +163,8 @@
     "title": "Felhasználási feltételek",
     "paragraph1": "A Beat For Trip-en vásárolt beattel nem kizárólagos licencet kapsz a licencelt fájl saját felvételeidben történő felhasználására, a vásárláskor megadott feltételek szerint.",
     "paragraph2": "Minden beat a Beat For Trip szellemi tulajdona marad. Az eredeti fájlok licenc nélküli továbbértékesítése, terjesztése vagy újra feltöltése tilos.",
-    "paragraph3": "A termék digitális jellege miatt minden eladás véglegesnek számít, amint a letöltési linket kiadtuk."
+    "paragraph3": "A termék digitális jellege miatt minden eladás véglegesnek számít, amint a letöltési linket kiadtuk.",
+    "exclusiveBeatClause": "Az Exclusive Beat vásárlás eltér a szokásos bit vásárlástól: miután megvásárolták, az adott Exclusive Beat többé nem kerül eladásra más vásárló számára."
   },
   "privacy": {
     "title": "Adatvédelem",
@@ -173,6 +182,12 @@
     "nameRequired": "Add meg a neved.",
     "emailLabel": "Email",
     "emailPlaceholder": "te@example.com",
-    "emailHint": "Fizetés után felvesszük veled a kapcsolatot a következő lépésekkel."
+    "emailHint": "Fizetés után felvesszük veled a kapcsolatot a következő lépésekkel.",
+    "exclusivePurchaseLabel": "Exkluzív vásárlás"
+  },
+  "refund": {
+    "title": "Visszatérítési szabályzat",
+    "paragraph1": "A termék digitális jellege miatt minden eladás véglegesnek számít, amint a letöltési linket kiadtuk.",
+    "paragraph2": "Visszatérítés akkor mérlegelhető, ha technikai probléma merül fel a fájllal vagy a letöltési linkkel kapcsolatban — például, ha a fájl sérült, vagy a link nem működik. Visszatérítés igényléséhez lépjen kapcsolatba velünk: {email}."
   }
 }

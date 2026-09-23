@@ -26,6 +26,10 @@
     "exclusiveBeat": {
       "title": "Exclusive Beat — Beat For Trip",
       "description": "Order a one-of-a-kind exclusive beat made just for you, starting from €30."
+    },
+    "refund": {
+      "title": "Refund Policy",
+      "description": "Refund policy for Beat For Trip."
     }
   },
   "header": {
@@ -93,7 +97,10 @@
     "notAvailable": "This beat is not available for purchase yet.",
     "volume": "Volume",
     "previewLabel": "Preview",
-    "fallbackGenre": "Beat"
+    "fallbackGenre": "Beat",
+    "format": "Format",
+    "digitalProduct": "Digital Product",
+    "license": "License"
   },
   "checkout": {
     "emailLabel": "Email for delivery",
@@ -144,7 +151,8 @@
     "about": "About",
     "terms": "Terms",
     "privacy": "Privacy",
-    "copyright": "© {year} Beat For Trip. All rights reserved."
+    "copyright": "© {year} Beat For Trip. All rights reserved.",
+    "refund": "Refund"
   },
   "about": {
     "title": "About <accent>Beat For Trip</accent>",
@@ -155,7 +163,8 @@
     "title": "Terms",
     "paragraph1": "By purchasing a beat from Beat For Trip you receive a non-exclusive license to use the licensed file in your own recordings, subject to the terms provided at the time of purchase.",
     "paragraph2": "All beats remain the intellectual property of Beat For Trip. Reselling, redistributing or re-uploading the original files without a license is prohibited.",
-    "paragraph3": "Due to the digital nature of the product, all sales are final once a download link has been issued."
+    "paragraph3": "Due to the digital nature of the product, all sales are final once a download link has been issued.",
+    "exclusiveBeatClause": "Exclusive Beat purchases are different from regular beat purchases: once an Exclusive Beat is purchased, that beat is not sold to any other customer."
   },
   "privacy": {
     "title": "Privacy",
@@ -173,6 +182,12 @@
     "nameRequired": "Enter your name.",
     "emailLabel": "Email",
     "emailPlaceholder": "you@example.com",
-    "emailHint": "We'll contact you with next steps after payment."
+    "emailHint": "We'll contact you with next steps after payment.",
+    "exclusivePurchaseLabel": "Exclusive Purchase"
+  },
+  "refund": {
+    "title": "Refund Policy",
+    "paragraph1": "Due to the digital nature of the product, all sales are final once a download link has been issued.",
+    "paragraph2": "A refund may be considered if there is a technical problem with the file or the download link — for example, if the file is corrupted or the link does not work. To request a refund, contact us at {email}."
   }
 }

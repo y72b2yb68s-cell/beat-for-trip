@@ -26,6 +26,10 @@
     "exclusiveBeat": {
       "title": "Exklusiver Beat — Beat For Trip",
       "description": "Bestelle einen exklusiven Beat, der nur für dich produziert wird — ab 30 €."
+    },
+    "refund": {
+      "title": "Rückerstattungsrichtlinie",
+      "description": "Rückerstattungsrichtlinie für Beat For Trip."
     }
   },
   "header": {
@@ -93,7 +97,10 @@
     "notAvailable": "Dieser Beat ist noch nicht käuflich.",
     "volume": "Lautstärke",
     "previewLabel": "Vorschau",
-    "fallbackGenre": "Beat"
+    "fallbackGenre": "Beat",
+    "format": "Format",
+    "digitalProduct": "Digitales Produkt",
+    "license": "Lizenz"
   },
   "checkout": {
     "emailLabel": "E-Mail für die Zustellung",
@@ -144,7 +151,8 @@
     "about": "Über uns",
     "terms": "AGB",
     "privacy": "Datenschutz",
-    "copyright": "© {year} Beat For Trip. Alle Rechte vorbehalten."
+    "copyright": "© {year} Beat For Trip. Alle Rechte vorbehalten.",
+    "refund": "Rückerstattung"
   },
   "about": {
     "title": "Über <accent>Beat For Trip</accent>",
@@ -155,7 +163,8 @@
     "title": "AGB",
     "paragraph1": "Mit dem Kauf eines Beats bei Beat For Trip erhältst du eine nicht-exklusive Lizenz zur Nutzung der lizenzierten Datei in deinen eigenen Aufnahmen, gemäß den zum Kaufzeitpunkt geltenden Bedingungen.",
     "paragraph2": "Alle Beats bleiben geistiges Eigentum von Beat For Trip. Weiterverkauf, Weiterverbreitung oder erneutes Hochladen der Originaldateien ohne Lizenz ist untersagt.",
-    "paragraph3": "Aufgrund der digitalen Natur des Produkts sind alle Verkäufe endgültig, sobald ein Download-Link ausgestellt wurde."
+    "paragraph3": "Aufgrund der digitalen Natur des Produkts sind alle Verkäufe endgültig, sobald ein Download-Link ausgestellt wurde.",
+    "exclusiveBeatClause": "Der Kauf eines Exclusive Beat unterscheidet sich vom Kauf eines regulären Beats: Sobald ein Exclusive Beat gekauft wurde, wird dieser Beat an keinen anderen Kunden mehr verkauft."
   },
   "privacy": {
     "title": "Datenschutz",
@@ -173,6 +182,12 @@
     "nameRequired": "Bitte gib deinen Namen ein.",
     "emailLabel": "Email",
     "emailPlaceholder": "du@beispiel.com",
-    "emailHint": "Wir melden uns nach der Zahlung mit den nächsten Schritten bei dir."
+    "emailHint": "Wir melden uns nach der Zahlung mit den nächsten Schritten bei dir.",
+    "exclusivePurchaseLabel": "Exklusiver Kauf"
+  },
+  "refund": {
+    "title": "Rückerstattungsrichtlinie",
+    "paragraph1": "Aufgrund der digitalen Natur des Produkts sind alle Verkäufe endgültig, sobald ein Download-Link ausgestellt wurde.",
+    "paragraph2": "Eine Rückerstattung kann bei einem technischen Problem mit der Datei oder dem Download-Link in Betracht gezogen werden — zum Beispiel, wenn die Datei beschädigt ist oder der Link nicht funktioniert. Um eine Rückerstattung zu beantragen, kontaktieren Sie uns unter {email}."
   }
 }

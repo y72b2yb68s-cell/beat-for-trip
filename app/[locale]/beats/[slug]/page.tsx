@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getPublishedBeatBySlug } from "@/lib/beats";
 import { formatDuration } from "@/lib/utils";
 import { buildAlternates } from "@/lib/seo";
+import { Link } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
 import CoverArt from "@/components/beats/CoverArt";
 import AudioPlayer from "@/components/audio/AudioPlayer";
@@ -43,6 +44,8 @@ export default async function BeatDetailPage({ params }: { params: Promise<Param
   if (!beat) notFound();
 
   const t = await getTranslations("beat");
+  const tFooter = await getTranslations("footer");
+  const tCheckout = await getTranslations("checkout");
 
   const stats = [
     { label: t("bpm"), value: beat.bpm },
@@ -97,6 +100,19 @@ export default async function BeatDetailPage({ params }: { params: Promise<Param
           </div>
 
           <BuyBox beat={beat} />
+
+          <div className="flex flex-col gap-1 rounded-xl border border-border bg-surface/50 px-4 py-3 text-xs text-muted">
+            <p className="font-semibold uppercase tracking-wide text-foreground">{t("digitalProduct")}</p>
+            <p>
+              {t("format")}: WAV — {tCheckout("emailHint")}
+            </p>
+            <p>
+              {t("license")}:{" "}
+              <Link href="/terms" className="text-green hover:underline">
+                {tFooter("terms")}
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>

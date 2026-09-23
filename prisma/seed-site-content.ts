@@ -65,6 +65,7 @@ const LOCALIZED_ENTRIES: LocalizedEntry[] = [
   { page: "footer", section: "links", key: "aboutLabel", messagePath: "footer.about" },
   { page: "footer", section: "links", key: "termsLabel", messagePath: "footer.terms" },
   { page: "footer", section: "links", key: "privacyLabel", messagePath: "footer.privacy" },
+  { page: "footer", section: "links", key: "refundLabel", messagePath: "footer.refund" },
   // footer.copyright is already "© {year} Beat For Trip. All rights reserved." — same {year} placeholder convention.
   { page: "footer", section: "copyright", key: "template", messagePath: "footer.copyright" },
 
@@ -78,12 +79,10 @@ const LOCALIZED_ENTRIES: LocalizedEntry[] = [
   { page: "seo", section: "exclusiveBeat", key: "description", messagePath: "metadata.exclusiveBeat.description" },
 ];
 
-// Non-localized fields — stored once under the default locale. Only the
-// site name has an unambiguous existing value (it's the app's own brand
-// name, used verbatim in the Header/Footer logo). The rest have no current
-// hardcoded equivalent, so they're left for an admin to fill in later.
+// Non-localized fields — stored once under the default locale.
 const DEFAULT_LOCALE_ENTRIES: Array<{ page: string; section: string; key: string; value: string }> = [
   { page: "settings", section: "general", key: "siteName", value: "Beat For Trip" },
+  { page: "settings", section: "contact", key: "contactEmail", value: "BeatForTrip@gmail.com" },
 ];
 
 function readPath(obj: unknown, path: string): string | undefined {

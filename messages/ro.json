@@ -26,6 +26,10 @@
     "exclusiveBeat": {
       "title": "Beat exclusiv — Beat For Trip",
       "description": "Comandă un beat exclusiv creat special pentru tine, începând de la 30 €."
+    },
+    "refund": {
+      "title": "Politica de rambursare",
+      "description": "Politica de rambursare pentru Beat For Trip."
     }
   },
   "header": {
@@ -93,7 +97,10 @@
     "notAvailable": "Acest beat nu este încă disponibil pentru cumpărare.",
     "volume": "Volum",
     "previewLabel": "Previzualizare",
-    "fallbackGenre": "Beat"
+    "fallbackGenre": "Beat",
+    "format": "Format",
+    "digitalProduct": "Produs digital",
+    "license": "Licență"
   },
   "checkout": {
     "emailLabel": "Email pentru livrare",
@@ -144,7 +151,8 @@
     "about": "Despre noi",
     "terms": "Termeni",
     "privacy": "Confidențialitate",
-    "copyright": "© {year} Beat For Trip. Toate drepturile rezervate."
+    "copyright": "© {year} Beat For Trip. Toate drepturile rezervate.",
+    "refund": "Rambursări"
   },
   "about": {
     "title": "Despre <accent>Beat For Trip</accent>",
@@ -155,7 +163,8 @@
     "title": "Termeni",
     "paragraph1": "Prin achiziționarea unui beat de la Beat For Trip primești o licență neexclusivă pentru a utiliza fișierul licențiat în propriile înregistrări, conform termenilor furnizați la momentul achiziției.",
     "paragraph2": "Toate beaturile rămân proprietatea intelectuală a Beat For Trip. Revânzarea, redistribuirea sau reîncărcarea fișierelor originale fără licență este interzisă.",
-    "paragraph3": "Datorită naturii digitale a produsului, toate vânzările sunt finale odată ce a fost emis un link de descărcare."
+    "paragraph3": "Datorită naturii digitale a produsului, toate vânzările sunt finale odată ce a fost emis un link de descărcare.",
+    "exclusiveBeatClause": "Achizițiile de Exclusive Beat diferă de achizițiile obișnuite de beat-uri: odată cumpărat, acel Exclusive Beat nu mai este vândut niciunui alt client."
   },
   "privacy": {
     "title": "Confidențialitate",
@@ -173,6 +182,12 @@
     "nameRequired": "Introdu numele tău.",
     "emailLabel": "Email",
     "emailPlaceholder": "tu@exemplu.com",
-    "emailHint": "Te vom contacta cu pașii următori după plată."
+    "emailHint": "Te vom contacta cu pașii următori după plată.",
+    "exclusivePurchaseLabel": "Achiziție exclusivă"
+  },
+  "refund": {
+    "title": "Politica de rambursare",
+    "paragraph1": "Datorită naturii digitale a produsului, toate vânzările sunt finale odată ce a fost emis un link de descărcare.",
+    "paragraph2": "O rambursare poate fi luată în considerare în cazul unei probleme tehnice cu fișierul sau linkul de descărcare — de exemplu, dacă fișierul este corupt sau linkul nu funcționează. Pentru a solicita o rambursare, contactați-ne la {email}."
   }
 }

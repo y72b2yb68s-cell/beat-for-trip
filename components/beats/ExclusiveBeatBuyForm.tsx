@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { formatPrice } from "@/lib/utils";
+import { Link } from "@/i18n/navigation";
 import Button from "@/components/ui/Button";
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -13,6 +14,7 @@ export default function ExclusiveBeatBuyForm({ price }: { price: number }) {
   const locale = useLocale();
   const t = useTranslations("exclusiveBeat");
   const tCheckout = useTranslations("checkout");
+  const tFooter = useTranslations("footer");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -94,6 +96,15 @@ export default function ExclusiveBeatBuyForm({ price }: { price: number }) {
           {loading ? tCheckout("processing") : t("buyButton", { price: formatPrice(price, locale) })}
         </Button>
         <p className="text-center text-xs text-muted">{t("emailHint")}</p>
+        <p className="text-center text-xs text-muted">
+          <Link href="/terms" className="hover:text-green hover:underline">
+            {tFooter("terms")}
+          </Link>
+          {" · "}
+          <Link href="/refund" className="hover:text-green hover:underline">
+            {tFooter("refund")}
+          </Link>
+        </p>
       </form>
     </div>
   );

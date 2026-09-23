@@ -1,6 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getLocalizedContent, getPageContent } from "@/lib/site-content";
+import { LEGAL_NAME, BUSINESS_ADDRESS, CONTACT_PHONE, FALLBACK_CONTACT_EMAIL } from "@/lib/business-info";
 
 const SOCIAL_ICON_PATHS: Record<string, string> = {
   instagram:
@@ -27,10 +28,13 @@ export default async function Footer() {
   const aboutLabel = getLocalizedContent(content, "links", "aboutLabel", t("about"));
   const termsLabel = getLocalizedContent(content, "links", "termsLabel", t("terms"));
   const privacyLabel = getLocalizedContent(content, "links", "privacyLabel", t("privacy"));
+  const refundLabel = getLocalizedContent(content, "links", "refundLabel", t("refund"));
   const copyrightTemplate = getLocalizedContent(content, "copyright", "template", t("copyright", { year }));
   const copyright = copyrightTemplate.includes("{year}")
     ? copyrightTemplate.replace("{year}", String(year))
     : copyrightTemplate;
+
+  const contactEmail = settings.contact?.contactEmail || FALLBACK_CONTACT_EMAIL;
 
   let socialLinks: Record<string, string> = {};
   const rawSocial = settings.social?.links;
@@ -52,6 +56,17 @@ export default async function Footer() {
               BEAT<span className="text-green">FOR</span>TRIP
             </p>
             <p className="mt-2 max-w-xs text-sm text-muted">{tagline}</p>
+
+            <div className="mt-3 flex flex-col gap-1 text-sm text-muted">
+              <p>{LEGAL_NAME}</p>
+              <p>{BUSINESS_ADDRESS}</p>
+              <a href={`tel:${CONTACT_PHONE.replace(/\s+/g, "")}`} className="hover:text-green">
+                {CONTACT_PHONE}
+              </a>
+              <a href={`mailto:${contactEmail}`} className="hover:text-green">
+                {contactEmail}
+              </a>
+            </div>
 
             {activeSocialLinks.length > 0 && (
               <div className="mt-4 flex gap-3">
@@ -92,11 +107,24 @@ export default async function Footer() {
               <Link href="/privacy" className="text-sm text-foreground hover:text-green">
                 {privacyLabel}
               </Link>
+              <Link href="/refund" className="text-sm text-foreground hover:text-green">
+                {refundLabel}
+              </Link>
             </div>
           </div>
         </div>
 
-        <div className="mt-10 border-t border-border pt-6 text-xs text-muted">{copyright}</div>
+        <div className="mt-10 flex flex-col gap-4 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs text-muted">{copyright}</p>
+          <div className="flex items-center gap-2">
+            <span className="rounded border border-border px-2 py-1 text-[10px] font-semibold uppercase tracking-wide text-muted">
+              Visa
+            </span>
+            <span className="rounded border border-border px-2 py-1 text-[10px] font-semibold uppercase tracking-wide text-muted">
+              Mastercard
+            </span>
+          </div>
+        </div>
       </div>
     </footer>
   );

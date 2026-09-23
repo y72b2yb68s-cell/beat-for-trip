@@ -26,6 +26,10 @@
     "exclusiveBeat": {
       "title": "Exkluzivní beat — Beat For Trip",
       "description": "Objednejte si jedinečný exkluzivní beat vytvořený jen pro vás, již od 30 €."
+    },
+    "refund": {
+      "title": "Zásady vracení peněz",
+      "description": "Zásady vracení peněz Beat For Trip."
     }
   },
   "header": {
@@ -93,7 +97,10 @@
     "notAvailable": "Tento beat zatím není dostupný ke koupi.",
     "volume": "Hlasitost",
     "previewLabel": "Ukázka",
-    "fallbackGenre": "Beat"
+    "fallbackGenre": "Beat",
+    "format": "Formát",
+    "digitalProduct": "Digitální produkt",
+    "license": "Licence"
   },
   "checkout": {
     "emailLabel": "Email pro doručení",
@@ -144,7 +151,8 @@
     "about": "O nás",
     "terms": "Podmínky",
     "privacy": "Soukromí",
-    "copyright": "© {year} Beat For Trip. Všechna práva vyhrazena."
+    "copyright": "© {year} Beat For Trip. Všechna práva vyhrazena.",
+    "refund": "Vrácení peněz"
   },
   "about": {
     "title": "O <accent>Beat For Trip</accent>",
@@ -155,7 +163,8 @@
     "title": "Podmínky",
     "paragraph1": "Zakoupením beatu od Beat For Trip získáváte nevýhradní licenci k použití licencovaného souboru ve vlastních nahrávkách, v souladu s podmínkami uvedenými v době nákupu.",
     "paragraph2": "Všechny beaty zůstávají duševním vlastnictvím Beat For Trip. Další prodej, šíření nebo opětovné nahrávání původních souborů bez licence je zakázáno.",
-    "paragraph3": "Vzhledem k digitální povaze produktu jsou všechny prodeje konečné po vydání odkazu ke stažení."
+    "paragraph3": "Vzhledem k digitální povaze produktu jsou všechny prodeje konečné po vydání odkazu ke stažení.",
+    "exclusiveBeatClause": "Nákup Exclusive Beat se liší od běžného nákupu beatu: jakmile je zakoupen, daný Exclusive Beat již není prodáván žádnému jinému zákazníkovi."
   },
   "privacy": {
     "title": "Soukromí",
@@ -173,6 +182,12 @@
     "nameRequired": "Zadejte své jméno.",
     "emailLabel": "Email",
     "emailPlaceholder": "vy@priklad.com",
-    "emailHint": "Po platbě vás budeme kontaktovat s dalšími kroky."
+    "emailHint": "Po platbě vás budeme kontaktovat s dalšími kroky.",
+    "exclusivePurchaseLabel": "Exkluzivní nákup"
+  },
+  "refund": {
+    "title": "Zásady vracení peněz",
+    "paragraph1": "Vzhledem k digitální povaze produktu jsou všechny prodeje konečné po vydání odkazu ke stažení.",
+    "paragraph2": "Vrácení peněz lze zvážit v případě technického problému se souborem nebo odkazem ke stažení — například pokud je soubor poškozený nebo odkaz nefunguje. Chcete-li požádat o vrácení peněz, kontaktujte nás na {email}."
   }
 }

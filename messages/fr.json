@@ -26,6 +26,10 @@
     "exclusiveBeat": {
       "title": "Beat exclusif — Beat For Trip",
       "description": "Commandez un beat exclusif créé rien que pour vous, à partir de 30 €."
+    },
+    "refund": {
+      "title": "Politique de remboursement",
+      "description": "Politique de remboursement de Beat For Trip."
     }
   },
   "header": {
@@ -93,7 +97,10 @@
     "notAvailable": "Ce beat n'est pas encore disponible à l'achat.",
     "volume": "Volume",
     "previewLabel": "Extrait",
-    "fallbackGenre": "Beat"
+    "fallbackGenre": "Beat",
+    "format": "Format",
+    "digitalProduct": "Produit numérique",
+    "license": "Licence"
   },
   "checkout": {
     "emailLabel": "Email de livraison",
@@ -144,7 +151,8 @@
     "about": "À propos",
     "terms": "Conditions",
     "privacy": "Confidentialité",
-    "copyright": "© {year} Beat For Trip. Tous droits réservés."
+    "copyright": "© {year} Beat For Trip. Tous droits réservés.",
+    "refund": "Remboursement"
   },
   "about": {
     "title": "À propos de <accent>Beat For Trip</accent>",
@@ -155,7 +163,8 @@
     "title": "Conditions",
     "paragraph1": "En achetant un beat sur Beat For Trip, vous recevez une licence non exclusive pour utiliser le fichier licencié dans vos propres enregistrements, selon les conditions fournies au moment de l'achat.",
     "paragraph2": "Tous les beats restent la propriété intellectuelle de Beat For Trip. La revente, la redistribution ou le re-téléchargement des fichiers originaux sans licence sont interdits.",
-    "paragraph3": "En raison de la nature numérique du produit, toutes les ventes sont définitives une fois le lien de téléchargement émis."
+    "paragraph3": "En raison de la nature numérique du produit, toutes les ventes sont définitives une fois le lien de téléchargement émis.",
+    "exclusiveBeatClause": "Les achats d'Exclusive Beat sont différents des achats de beats standard : une fois acheté, cet Exclusive Beat n'est vendu à aucun autre client."
   },
   "privacy": {
     "title": "Confidentialité",
@@ -173,6 +182,12 @@
     "nameRequired": "Indiquez votre nom.",
     "emailLabel": "Email",
     "emailPlaceholder": "vous@exemple.com",
-    "emailHint": "Nous vous contacterons pour la suite après le paiement."
+    "emailHint": "Nous vous contacterons pour la suite après le paiement.",
+    "exclusivePurchaseLabel": "Achat exclusif"
+  },
+  "refund": {
+    "title": "Politique de remboursement",
+    "paragraph1": "En raison de la nature numérique du produit, toutes les ventes sont définitives une fois le lien de téléchargement émis.",
+    "paragraph2": "Un remboursement peut être envisagé en cas de problème technique avec le fichier ou le lien de téléchargement — par exemple, si le fichier est corrompu ou si le lien ne fonctionne pas. Pour demander un remboursement, contactez-nous à {email}."
   }
 }

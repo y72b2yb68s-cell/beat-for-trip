@@ -1,7 +1,7 @@
 import { routing, type AppLocale } from "@/i18n/routing";
 import { getLocalizedContent, getPageContent } from "./site-content";
 
-function localePath(locale: AppLocale, pathname: string): string {
+export function localePath(locale: AppLocale, pathname: string): string {
   const prefix = locale === routing.defaultLocale ? "" : `/${locale}`;
   const suffix = pathname === "/" ? "" : pathname;
   return `${prefix}${suffix}` || "/";
