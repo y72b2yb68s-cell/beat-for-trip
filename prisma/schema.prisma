@@ -51,10 +51,17 @@ model Order {
   amount                  Float
   currency                String
 
-  paymentProvider         String // "mock" | "tribute"
+  paymentProvider         String // "mock" | "tribute" | "paypalych"
   paymentId               String? // external payment/session id from the provider
 
   status                  String    @default("pending") // pending | paid | failed | refunded
+
+  // PayPalych refund/chargeback webhook event IDs — idempotency key + audit
+  // trail (a repeat delivery of the same event ID is a no-op). A confirmed
+  // chargeback also sets status to "refunded" — there's no separate UI state
+  // for it — so chargebackId is what distinguishes it from a voluntary refund.
+  refundId                String?
+  chargebackId            String?
 
   // EXCLUSIVE_BEAT orders only: fulfillment progress after payment, since the
   // beat itself is produced after the purchase. Unused (null) for regular

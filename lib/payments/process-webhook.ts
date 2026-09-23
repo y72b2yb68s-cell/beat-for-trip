@@ -2,6 +2,7 @@ import { prisma } from "@/lib/db";
 import { getEmailProvider } from "@/lib/email";
 import { DOWNLOAD_TOKEN_TTL_MS, generateDownloadToken, getOrderByPaymentId } from "@/lib/orders";
 import { getPaymentProvider } from "./index";
+import { amountsMatch } from "./types";
 
 export type WebhookProcessResult =
   | { ok: true; status: "paid" | "failed" | "already-processed" }
@@ -40,6 +41,16 @@ export async function processPaymentWebhook(
   }
 
   if (event.status === "paid") {
+    // Only providers that supply amount/currency on the event (currently
+    // PayPalych) get this check — Mock/Tribute omit both fields and are
+    // unaffected. Must run before any status="paid" write or download token.
+    if (event.amount !== undefined && !amountsMatch(event.amount, order.amount)) {
+      return { ok: false, error: "Amount does not match the order", statusCode: 400 };
+    }
+    if (event.currency !== undefined && event.currency !== order.currency) {
+      return { ok: false, error: "Currency does not match the order", statusCode: 400 };
+    }
+
     const isExclusive = order.type === "EXCLUSIVE_BEAT";
 
     // Exclusive Beat orders have no file yet — the beat is produced after

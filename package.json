@@ -7,6 +7,7 @@
     "build": "prisma migrate deploy && next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "vitest run",
     "postinstall": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "db:generate": "prisma generate",
@@ -35,15 +36,16 @@
     "prisma": "6.19.3",
     "tailwindcss": "^4",
     "tsx": "^4.23.13",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^2.1.9"
   },
   "allowScripts": {
     "unrs-resolver@1.12.2": true,
-    "esbuild@0.28.2": true,
     "@prisma/client@6.19.3": true,
     "prisma@6.19.3": true,
     "@prisma/engines@6.19.3": true,
     "@parcel/watcher@2.6.0": true,
-    "@swc/core@1.16.2": true
+    "@swc/core@1.16.2": true,
+    "esbuild@0.21.5": true
   }
 }

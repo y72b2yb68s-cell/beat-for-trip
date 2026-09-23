@@ -18,6 +18,9 @@ export type CreatePaymentResult = {
 export type WebhookEvent = {
   paymentId: string;
   status: "paid" | "failed";
+  /** Optional — providers that can't supply these (Mock, Tribute) simply omit them, and no validation is performed. */
+  amount?: number;
+  currency?: string;
 };
 
 export interface PaymentProvider {
@@ -25,4 +28,13 @@ export interface PaymentProvider {
   createPayment(params: CreatePaymentParams): Promise<CreatePaymentResult>;
   verifyWebhookSignature(rawBody: string, signature: string | null): boolean;
   parseWebhookEvent(rawBody: string): WebhookEvent;
+}
+
+/**
+ * Tolerant equality for money amounts stored as a Prisma Float (major
+ * currency units, e.g. 29.99) — avoids floating-point comparison pitfalls
+ * like 0.1 + 0.2 !== 0.3. One cent (0.01) of tolerance either way.
+ */
+export function amountsMatch(a: number, b: number): boolean {
+  return Number.isFinite(a) && Number.isFinite(b) && Math.abs(a - b) < 0.01;
 }
