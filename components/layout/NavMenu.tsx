@@ -5,15 +5,21 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
-export default function NavMenu() {
+export default function NavMenu({
+  beatsLabel,
+  aboutLabel,
+}: {
+  beatsLabel?: string;
+  aboutLabel?: string;
+} = {}) {
   const pathname = usePathname();
   const t = useTranslations("header");
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const navLinks = [
-    { href: "/beats", label: t("beats") },
-    { href: "/about", label: t("about") },
+    { href: "/beats", label: beatsLabel || t("beats") },
+    { href: "/about", label: aboutLabel || t("about") },
   ];
 
   useEffect(() => {

@@ -49,6 +49,8 @@ next-env.d.ts
 /storage/
 /public/previews/
 /public/covers/
+/public/media/
 !/public/previews/.gitkeep
 !/public/covers/.gitkeep
+!/public/media/.gitkeep
 !/storage/.gitkeep

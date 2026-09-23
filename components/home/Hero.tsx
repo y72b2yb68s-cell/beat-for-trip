@@ -1,7 +1,17 @@
 import { useTranslations } from "next-intl";
 import Button from "@/components/ui/Button";
 
-export default function Hero() {
+export type HeroContent = {
+  titleLine1?: string;
+  titleLine2?: string;
+  subtitle?: string;
+  cta?: string;
+};
+
+// `content` is CMS-resolved server-side (see app/[locale]/page.tsx) and falls
+// back to the existing i18n strings whenever a field is empty — the hero
+// must never go blank because of missing CMS content.
+export default function Hero({ content }: { content?: HeroContent }) {
   const t = useTranslations("hero");
 
   return (
@@ -12,14 +22,16 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-7xl px-4 py-24 text-center sm:px-6 sm:py-32 lg:px-8">
         <h1 className="glow-text text-4xl font-extrabold uppercase leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-          {t("titleLine1")}
+          {content?.titleLine1 || t("titleLine1")}
           <br />
-          <span className="text-green">{t("titleLine2")}</span>
+          <span className="text-green">{content?.titleLine2 || t("titleLine2")}</span>
         </h1>
-        <p className="mx-auto mt-6 max-w-xl text-base text-muted sm:text-lg">{t("subtitle")}</p>
+        <p className="mx-auto mt-6 max-w-xl text-base text-muted sm:text-lg">
+          {content?.subtitle || t("subtitle")}
+        </p>
         <div className="mt-10 flex justify-center">
           <Button href="/beats" size="lg">
-            {t("explore")}
+            {content?.cta || t("explore")}
           </Button>
         </div>
       </div>

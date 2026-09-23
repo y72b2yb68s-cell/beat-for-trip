@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/admin", label: "Dashboard", exact: true },
   { href: "/admin/beats", label: "Beats", exact: false },
   { href: "/admin/orders", label: "Orders", exact: false },
+  { href: "/admin/website", label: "Website", exact: false },
 ];
 
 export default function AdminShell({ email, children }: { email: string; children: ReactNode }) {

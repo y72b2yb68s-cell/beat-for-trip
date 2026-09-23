@@ -19,7 +19,7 @@ function safeFilename(originalName: string): string {
 
 export class LocalStorageProvider implements StorageProvider {
   async savePublicFile(
-    folder: "covers" | "previews",
+    folder: "covers" | "previews" | "media",
     filename: string,
     data: Buffer
   ): Promise<string> {

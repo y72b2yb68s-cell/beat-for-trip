@@ -5,11 +5,14 @@ import { useTranslations } from "next-intl";
 export default function SearchBar({
   value,
   onChange,
+  placeholder,
 }: {
   value: string;
   onChange: (value: string) => void;
+  placeholder?: string;
 }) {
   const t = useTranslations("catalog");
+  const resolvedPlaceholder = placeholder || t("searchPlaceholder");
 
   return (
     <div className="relative">
@@ -27,8 +30,8 @@ export default function SearchBar({
         type="search"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder={t("searchPlaceholder")}
-        aria-label={t("searchPlaceholder")}
+        placeholder={resolvedPlaceholder}
+        aria-label={resolvedPlaceholder}
         className="w-full rounded-full border border-border bg-surface py-3 pl-11 pr-4 text-sm text-foreground placeholder:text-muted focus:border-green focus:outline-none"
       />
     </div>

@@ -78,3 +78,22 @@ model Admin {
   email     String   @unique
   createdAt DateTime @default(now())
 }
+
+// Website CMS. One row per editable field per locale — never one giant JSON
+// blob — so drafts, publishing and locale overrides all work at field
+// granularity. `page`/`section`/`key` mirror lib/site-content-registry.ts.
+model SiteContent {
+  id         String   @id @default(cuid())
+  page       String
+  section    String
+  key        String
+  locale     String
+  value      String? // published — read by the public site
+  draftValue String? // admin-only — never exposed to the public site
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([page, section, key, locale])
+  @@index([page, locale])
+}
